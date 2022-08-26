@@ -5,9 +5,9 @@
     } catch (PDOException $e) {
         die($e->getMessage());
     }
-
+    
     if(!empty($_POST['name']) && !empty($_POST['phone'])){
-        $sql = ("INSERT INTO `mytable`(`name`, `phone`) VALUES(?,?)");
+        $sql = ("INSERT INTO `mytable`(`user`, `phone`) VALUES(?,?)");
         $query = $pdo->prepare($sql);
         $query->execute([$_POST['name'], $_POST['phone']]);
         $data = ['name' => $_POST['name'], 'phone' => $_POST['phone'],'res'=>'all is OK'];
