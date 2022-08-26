@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фотограф СПБ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="modal" class="modal">
+        <div class="modal_body">
+            <div class="modal_close">
+                <img src="images/delete.png" id="close_btn" alt="close">
+            </div>
+            <div class="modal_content">
+                <h2>Хочу фотосессию!</h2>
+                <form action="/" method="post">
+                    <div class="form_block">
+                        <input type="text" required="" id="name" placeholder="Ваше имя">
+                        <input type="text" required="" id="phone" placeholder="+7 ( _ _ _) _ _ _ - _ _ - _ _">
+                        <button class="submit" type="submit">Отправить</button>
+                        <div class="form_politic">
+                            <p class="form_politic_text">
+                                Нажимая кнопку Вы соглашаетесь с условиями <a href="">Политики конфиденциальности</a>  
+                            </p>                     
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <header class="fixed-container">
+        <nav>
+            <a href="first.html">Обо мне</a>
+            <a href="second.html">Услуги и стоимость</a>
+            <a href="third.html">Портфолио</a>
+        </nav>
+        <div>
+            <a href="tel:+79643384325">+7 964 338-43-25</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <button id="btn" class="light-button btn">Заказать звонок</button>
+        </div>
+
+    </header>
+    <main>
+        <section class="fixed-container first-section">
+            <div class="first-block">
+                    <h1>Юлия Чинянина</h1>
+                    <h3>Твой личный фотограф в СПБ</h3>
+                    
+                    <div class="sale">
+                        <a href="fourth.html">Акция в сентябре!*</a>
+                    </div>
+                    <p class="first-page-text">* повод порадовать себя красивыми фотографиями</p>
+            </div>
+            <div class="second-block">
+                    <img src="images/photographer.jpg" alt="Photo of photographer">
+            </div>
+        </section>
+        
+        <section class="fixed-container services-block">
+                    <div class="services-container">
+                        <div class="services">
+                            <p>Фотопрогулка по городу</p>
+                            <a href="second.html"><img src="images/fotoprogulka.png" alt="Фотопрогулка"></a>
+                            
+                        </div>
+                        <div class="services">
+                            <p><a name="studia"></a></p>
+                            <p>Студийная фотосессия</p>
+                            <a href="second.html#studia"><img src="images/studio.png" alt="Студийная фотосессия"></a>
+                            
+                        </div>
+                        <div class="services">
+                            <p><a name="content"></a></p>
+                            <p>Контентная съёмка</p>
+                            <a href="second.html#content"><img src="images/content.png" alt="Контент-съёмка"></a>
+                        </div>
+                    </div>
+        </section>
+        
+    </main>
+    <footer class="fixed-container">
+        <div>   
+            <img src="images/copyright.png" alt="Copyright">&nbsp;<span class="footer-copyright">All rights reserved</span>
+        </div> 
+        <div>
+            <a href="https://vk.com/chinia.photo" target="_blank"> ВКонтакте</a>
+            <img src="images/vk.png" alt="whatsapp-logo">
+            &nbsp;
+            <a href="tel:+79643384325">+7 964 338-43-25</a>
+            <img src="images/telegram (1).png" alt="telegram-logo">
+            <img src="images/whatsapp (1).png" alt="whatsapp-logo">     
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
