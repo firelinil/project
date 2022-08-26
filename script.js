@@ -31,5 +31,8 @@
         });
        
         let result = await response.json();
-        console.log(result.res)
+        if(result.res =='all is OK'){
+         modal.classList.remove('modal_opened') //закрываем модалку
+         alert(Данные успешно отправлены! Вы можете закрыть это сообщение.)
+        }
       })
