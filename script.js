@@ -33,6 +33,6 @@
         let result = await response.json();
         if(result.res =='all is OK'){
          modal.classList.remove('modal_opened') //закрываем модалку
-         alert(Данные успешно отправлены! Вы можете закрыть это сообщение.)
+         alert('Данные успешно отправлены! Вы можете закрыть это сообщение.')
         }
       })
