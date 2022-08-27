@@ -22,11 +22,11 @@ try {
     $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
  
     $sql = "SELECT id_user, user, phone, comments FROM mytable";
-    // Подготовка запроса
+    
     $statement = $db->prepare($sql);
-    // Выполняем запрос
+    
     $statement->execute();
-    // Получаем массив строк 
+     
     $result_array = $statement->fetchAll();
  
     echo "<table><tr><th>ID</th><th>user</th><th>phone</th><th>comments</th></tr>";
